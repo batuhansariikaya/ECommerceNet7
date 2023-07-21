@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ECommerceNet7.Domain.Entities.Common
 {
-    public interface IEntity
+    public class BaseEntity
     {
+        public int Id { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
     }
 }
